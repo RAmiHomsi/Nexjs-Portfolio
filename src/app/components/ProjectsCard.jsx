@@ -1,8 +1,15 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 
-const ProjectsCard = ({ imgUrl, title, href, githref }) => {
+const ProjectsCard = ({ imgUrl, title, description, href, githref }) => {
+  const [isExpanded, setIsExpanded] = useState(false);
+
+  const toggleDescription = () => {
+    setIsExpanded(!isExpanded);
+  };
+
   return (
     <div>
       <div
@@ -32,8 +39,21 @@ const ProjectsCard = ({ imgUrl, title, href, githref }) => {
           )}
         </div>
       </div>
-      <div className="bg-[#181818] rounded-b-xl py-6 px-4 text-white">
+      <div className="bg-[#141316] rounded-b-xl py-6 px-4 text-white">
         <h5 className="font-lg font-semibold">{title}</h5>
+        <p
+          className={`text-[#ADB7BE] ${
+            isExpanded ? "overflow-y-visible" : "truncate"
+          }`}
+        >
+          {description}
+        </p>
+        <button
+          className="text-white hover:underline mt-2"
+          onClick={toggleDescription}
+        >
+          {isExpanded ? "Show Less" : "Show More"}
+        </button>
       </div>
     </div>
   );

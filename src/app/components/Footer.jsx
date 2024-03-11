@@ -6,7 +6,7 @@ import LinkedinIcon from "../../../public/linkedin-icon.svg";
 
 const Footer = () => {
   return (
-    <footer className="border-t border-[#33353F] bg-[#121212] z-10 text-white">
+    <footer className="border-t border-[#33353F] bg-[#080808] z-10 text-white">
       <div className="container p-12 flex justify-between">
         <div className="flex flex-row gap-4">
           <Link href="https://github.com/RAmiHomsi?tab=repositories">

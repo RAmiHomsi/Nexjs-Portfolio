@@ -255,7 +255,7 @@ const AboutSection = () => {
     setTab(id);
   };
   return (
-    <section className="text-white">
+    <section id="about" className="text-white">
       <div className="gap-8  py-8 px-4 xl:gap-16 md:grid md:grid-cols-2 sm:py-16 lg:px-16">
         <Image src="/images/horse.png" width={500} height={500} alt="" />
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">

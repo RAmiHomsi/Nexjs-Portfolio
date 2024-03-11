@@ -23,7 +23,7 @@ const HeroSection = () => {
             repeat={Infinity}
           />
         </h1>
-        <p className="text-[#ADB7BE] mb-6 text-lg lg:text-xl">
+        <p className="text-gray-200 mb-6 text-lg lg:text-xl">
           Make anything possible with Web Development
         </p>
         <div>
@@ -37,7 +37,7 @@ const HeroSection = () => {
       </div>
 
       <div className="col-span-5 place-self-center mt-4 lg:mt-0">
-        <div className="bg-[#181818] lg:w-[400px] lg:h-[400px] w-[250px] h-[250px] rounded-full relative border border-sky-900">
+        <div className="bg-[#141316] lg:w-[400px] lg:h-[400px] w-[250px] h-[250px] rounded-full relative border border-sky-900">
           <Image
             src="/images/hero_image.png"
             alt="hero image"
