@@ -13,11 +13,7 @@ const ProjectsCard = ({ imgUrl, title, description, href, githref }) => {
   return (
     <div>
       <div
-        className="group rounded-t-xl h-52 md:h-72 bg-center bg-no-repeat relative overflow-hidden"
-        src={imgUrl}
-        alt={title}
-        width={300}
-        height={200}
+        className="h-52 md:h-72 rounded-t-xl relative group"
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
       >
         <div className="w-full h-full justify-center items-center hover:backdrop-brightness-50 group-hover:flex hidden">
@@ -42,8 +38,8 @@ const ProjectsCard = ({ imgUrl, title, description, href, githref }) => {
       <div className="bg-[#141316] rounded-b-xl py-6 px-4 text-white">
         <h5 className="font-lg font-semibold">{title}</h5>
         <p
-          className={`text-[#ADB7BE] ${
-            isExpanded ? "overflow-y-visible" : "truncate"
+          className={`text-[#ADB7BE] overflow-hidden ${
+            isExpanded ? "visible" : "line-clamp-1"
           }`}
         >
           {description}
