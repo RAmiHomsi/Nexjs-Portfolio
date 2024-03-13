@@ -274,6 +274,11 @@ const AboutSection = () => {
             I am excited to work with others to create interactive and
             responsive amazing applications.
           </p>
+          <br></br>
+          <p className="text-white text-base md:text-lg">
+            Enter rami as name (if needed), email: rami@gmail.com and pass:
+            1234567 to login as admin and explore the projects
+          </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("web")}

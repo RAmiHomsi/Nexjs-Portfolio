@@ -11,7 +11,7 @@ const ProjectsCard = ({ imgUrl, title, description, href, githref }) => {
   };
 
   return (
-    <div>
+    <div className="hover:scale-110 hover:rotate-2">
       <div
         className="h-52 md:h-72 rounded-t-xl relative group"
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
