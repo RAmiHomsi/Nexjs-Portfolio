@@ -223,25 +223,7 @@ const TAB_DATA = [
             height={16}
             className="mr-2"
           />
-          Computer Science at Lund University, Sweden
-        </li>
-      </ul>
-    ),
-  },
-  {
-    title: "Certifications",
-    id: "certifications",
-    content: (
-      <ul className="list-disc pl-2">
-        <li className="flex items-center">
-          <Image
-            src="/logo_aws.png"
-            alt="Image"
-            width={16}
-            height={16}
-            className="mr-2"
-          />{" "}
-          AWS Developer Associate (soon)
+          Computer Science and Engineering at Lund University, Sweden
         </li>
       </ul>
     ),
@@ -275,10 +257,7 @@ const AboutSection = () => {
             responsive amazing applications.
           </p>
           <br></br>
-          <p className="text-white text-base md:text-lg">
-            Enter rami as name (if needed), email: rami@gmail.com and pass:
-            1234567 to login as admin and explore the projects
-          </p>
+
           <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("web")}
@@ -297,12 +276,6 @@ const AboutSection = () => {
               active={tab === "education"}
             >
               Education
-            </TabButton>
-            <TabButton
-              selectTab={() => handleTabChange("certifications")}
-              active={tab === "certifications"}
-            >
-              Certifications
             </TabButton>
           </div>
           <div className="mt-8">

@@ -56,7 +56,7 @@ const projectsData = [
   },
   {
     id: 6,
-    title: "AI SaaS Chat Bot using MERN + Typescript",
+    title: "AI SaaS Chat Bot using MERN + TypeScript",
     description:
       "This is an AI Chatbot application, inspired by ChatGPT, by using MERN Stack and OpenAI It's a customized chatbot where each message of the user is stored in DB and can be retrieved and deleted. It's a completely secure application using JWT Tokens, HTTP-Only Cookies, Signed Cookies, Password Encryption, and Middleware Chains.",
     image: "/images/projects/6.png",
@@ -66,7 +66,7 @@ const projectsData = [
   },
   {
     id: 7,
-    title: "Nextjs Cars Showcase",
+    title: "Nextjs + TypeScript Cars Showcase",
     description:
       "Developed with Typescript and Next.js and leveraging its server-side rendering capabilities, Metadata Optimization and SEO, the Car Showcase website presents various car types, showcasing comprehensive information in a well-designed format with advanced filtering and pagination support for an enhanced user experience.",
     image: "/images/projects/7.png",
@@ -120,7 +120,11 @@ const ProjectsSection = () => {
         className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12"
       >
         Projects
+        <p className="text-white text-base md:text-lg">
+          Login as admin email: rami@gmail.com and pass: 1234567
+        </p>
       </h1>
+
       <div className="flex flex-row justify-center items-center gap-2 text-white my-6">
         <ProjectTag
           name="All"
